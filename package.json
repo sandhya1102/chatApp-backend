@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node index.js",
-    "start":"node index.js",
-    "build":"cd frontend && npm install && npm run build"
+    "start":"node index.js"
   },
   "keywords": [],
   "author": "",

@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-  origin: "https://chatapp-mern-stack-1.vercel.app",
+  origin: ["https://chat-app-frontend-kms9.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 };
