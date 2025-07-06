@@ -60,6 +60,8 @@ io.on('connection', (socket) => {
   });
 });
 
+export { app, server, io };
+
 // START SERVER ✅
 const PORT = process.env.PORT || 10000;
 server.listen(PORT, () => {
