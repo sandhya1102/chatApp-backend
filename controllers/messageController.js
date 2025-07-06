@@ -57,10 +57,7 @@ export const getMessage = async (req, res) => {
 
     const conversation = await Conversation.findOne({
       participants: { $all: [senderId, receiverId] },
-    }).populate({
-      path: "messages",
-      options: { sort: { createdAt: 1 } },
-    });
+    }).populate("messages");
     return res.status(200).json(conversation?.messages);
   } catch (error) {
     console.error("Get Message Error:", error.message);
